@@ -113,4 +113,7 @@ with gr.Blocks(title="AI Movie Language Dubber") as demo:
     gr.Markdown("**Note:** Best for short clips during testing. Translation and voice generation require an internet connection.")
 
 if __name__ == "__main__":
-    demo.queue().launch()
+    demo.queue().launch(
+    server_name="0.0.0.0",
+    server_port=int(os.environ.get("PORT", 10000))
+    )
