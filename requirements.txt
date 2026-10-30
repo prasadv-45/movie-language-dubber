@@ -1,0 +1,7 @@
+gradio==4.44.1
+faster-whisper==1.1.1
+av<19
+deep-translator==1.11.4
+edge-tts
+moviepy==1.0.3
+imageio-ffmpeg
